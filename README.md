@@ -1,8 +1,6 @@
 ## telegram-bot-with-telegraf
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
-![Preview](./preview.png?raw=true "Preview Screenshot")
-
 A Telegram Bot written with Telegraf's awesome API for sharing digital comics/misc content with your friends/groups.
 
 ### Installation
@@ -27,8 +25,11 @@ $ npm install
 * Random comics from **Dinocomics**.
 * More coming soon!
 
-##### Misc
+##### Screenshot
+Bot in action >
+![Preview](./preview.png?raw=true "Preview Screenshot")
 
+##### Misc
 Remember to checkout **Telegraf** documentation.
 http://telegraf.js.org/
 
