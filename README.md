@@ -26,7 +26,6 @@ $ npm install
 * More coming soon!
 
 ##### Screenshot
-Bot in action >
 ![Preview](./preview.png?raw=true "Preview Screenshot")
 
 ##### Misc
