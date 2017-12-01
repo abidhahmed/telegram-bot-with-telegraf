@@ -1,0 +1,34 @@
+{
+  "name": "telegram-bot-with-telegraf",
+  "version": "0.0.1",
+  "description": "Telegram bot for web comics & misc content - made with the awesome Telegraf API",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abidhahmed/telegram-bot-with-telegraf.git"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "telegraf",
+    "api",
+    "comics"
+  ],
+  "author": "Abidh Ahmed",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abidhahmed/telegram-bot-with-telegraf/issues"
+  },
+  "homepage": "https://github.com/abidhahmed/telegram-bot-with-telegraf#readme",
+  "engines": {
+    "node": "^8.9.1"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "is-url": "^1.2.2",
+    "node-fetch": "^1.7.3",
+    "telegraf": "^3.16.4"
+  },
+  "devDependencies": {
+    "standard": "^10.0.3"
+  }
+}
