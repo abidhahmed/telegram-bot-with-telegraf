@@ -3,6 +3,7 @@
 const Telegraf = require('telegraf')
 const config = require('./config/config')
 const comic = require('./lib/comic')
+const random = require('./lib/random')
 
 const bot = new Telegraf(config.telegramToken)
 
@@ -47,6 +48,20 @@ bot.command('dinocomics', (ctx) => {
     .catch(err => {
       ctx.reply(errMsg)
       console.error(err)
+    })
+})
+
+bot.command('randomcats', (ctx) => {
+  random.cats()
+    .then(catsLink => {
+      ctx.replyWithChatAction('upload_photo')
+      ctx.replyWithPhoto({
+        url: catsLink
+      })
+    })
+    .catch(err => {
+      ctx.reply(errMsg)
+      console.log(err)
     })
 })
 
