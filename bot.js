@@ -13,9 +13,7 @@ bot.command('cyanide', (ctx) => {
   comic.cyanide()
     .then(cyanideLink => {
       ctx.replyWithChatAction('upload_photo')
-      ctx.replyWithPhoto({
-        url: cyanideLink
-      })
+      ctx.replyWithPhoto(cyanideLink, {caption: 'Random C&H comic'})
     })
     .catch(err => {
       ctx.reply(errMsg)
@@ -27,9 +25,7 @@ bot.command('xkcd', (ctx) => {
   comic.xkcd()
     .then(xkcdLink => {
       ctx.replyWithChatAction('upload_photo')
-      ctx.replyWithPhoto({
-        url: xkcdLink
-      })
+      ctx.replyWithPhoto(xkcdLink, {caption: 'Random XKCD comic'})
     })
     .catch(err => {
       ctx.reply(errMsg)
@@ -41,9 +37,7 @@ bot.command('dinocomics', (ctx) => {
   comic.dinocomics()
     .then(dinocomicsLink => {
       ctx.replyWithChatAction('upload_photo')
-      ctx.replyWithPhoto({
-        url: dinocomicsLink
-      })
+      ctx.replyWithPhoto(dinocomicsLink, {caption: 'Random Dinocomics comic'})
     })
     .catch(err => {
       ctx.reply(errMsg)
@@ -51,13 +45,11 @@ bot.command('dinocomics', (ctx) => {
     })
 })
 
-bot.command('randomcats', (ctx) => {
+bot.command('randomcat', (ctx) => {
   random.cats()
     .then(catsLink => {
       ctx.replyWithChatAction('upload_photo')
-      ctx.replyWithPhoto({
-        url: catsLink
-      })
+      ctx.replyWithPhoto(catsLink, {caption: 'Random Cat'})
     })
     .catch(err => {
       ctx.reply(errMsg)
