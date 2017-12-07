@@ -11,6 +11,7 @@ const errMsg = 'Unable to fullfil this request, try again later.'
 bot.command('cyanide', (ctx) => {
   comic.cyanide()
     .then(cyanideLink => {
+      ctx.replyWithChatAction('upload_photo')
       ctx.replyWithPhoto({
         url: cyanideLink
       })
@@ -24,6 +25,7 @@ bot.command('cyanide', (ctx) => {
 bot.command('xkcd', (ctx) => {
   comic.xkcd()
     .then(xkcdLink => {
+      ctx.replyWithChatAction('upload_photo')
       ctx.replyWithPhoto({
         url: xkcdLink
       })
@@ -37,6 +39,7 @@ bot.command('xkcd', (ctx) => {
 bot.command('dinocomics', (ctx) => {
   comic.dinocomics()
     .then(dinocomicsLink => {
+      ctx.replyWithChatAction('upload_photo')
       ctx.replyWithPhoto({
         url: dinocomicsLink
       })
