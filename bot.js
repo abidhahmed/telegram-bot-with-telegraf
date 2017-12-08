@@ -46,10 +46,23 @@ bot.command('dinocomics', (ctx) => {
 })
 
 bot.command('randomcat', (ctx) => {
-  random.cats()
+  random.cat()
     .then(catsLink => {
       ctx.replyWithChatAction('upload_photo')
       ctx.replyWithPhoto(catsLink, {caption: 'Random Cat'})
+    })
+    .catch(err => {
+      ctx.reply(errMsg)
+      console.log(err)
+    })
+})
+
+bot.command('randomjoke', (ctx) => {
+  random.joke()
+    .then(jokeTxt => {
+      ctx.replyWithChatAction('typing')
+      ctx.reply(jokeTxt[0])
+      setTimeout(() => ctx.reply(jokeTxt[1]), 1000)
     })
     .catch(err => {
       ctx.reply(errMsg)
