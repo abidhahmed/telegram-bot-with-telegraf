@@ -10,7 +10,7 @@ const bot = new Telegraf(config.telegramToken)
 const errMsg = 'Unable to fullfil this request, try again later.'
 
 bot.command('cyanide', (ctx) => {
-  comic.cyanide()
+  comic.cyanide(config.explosmUrl)
     .then(cyanideLink => {
       ctx.replyWithChatAction('upload_photo')
       ctx.replyWithPhoto(cyanideLink, {caption: 'Random C&H comic'})
@@ -22,7 +22,7 @@ bot.command('cyanide', (ctx) => {
 })
 
 bot.command('xkcd', (ctx) => {
-  comic.xkcd()
+  comic.xkcd(config.xkcdUrl)
     .then(xkcdLink => {
       ctx.replyWithChatAction('upload_photo')
       ctx.replyWithPhoto(xkcdLink, {caption: 'Random XKCD comic'})
@@ -34,7 +34,7 @@ bot.command('xkcd', (ctx) => {
 })
 
 bot.command('dinocomics', (ctx) => {
-  comic.dinocomics()
+  comic.dinocomics(config.dinocomicsUrl)
     .then(dinocomicsLink => {
       ctx.replyWithChatAction('upload_photo')
       ctx.replyWithPhoto(dinocomicsLink, {caption: 'Random Dinocomics comic'})
@@ -46,7 +46,7 @@ bot.command('dinocomics', (ctx) => {
 })
 
 bot.command('randomcat', (ctx) => {
-  random.cat()
+  random.cat(config.catAPI)
     .then(catsLink => {
       ctx.replyWithChatAction('upload_photo')
       ctx.replyWithPhoto(catsLink, {caption: 'Random Cat'})
@@ -58,7 +58,7 @@ bot.command('randomcat', (ctx) => {
 })
 
 bot.command('randomjoke', (ctx) => {
-  random.joke()
+  random.joke(config.jokeUrl)
     .then(jokeTxt => {
       ctx.replyWithChatAction('typing')
       ctx.reply(jokeTxt[0])
