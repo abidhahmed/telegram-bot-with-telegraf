@@ -1,5 +1,5 @@
 ## telegram-bot-with-telegraf
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+[![Build Status](https://travis-ci.org/abidhahmed/telegram-bot-with-telegraf.svg?branch=master)](https://travis-ci.org/abidhahmed/telegram-bot-with-telegraf) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
 A Telegram Bot written with Telegraf's awesome API for sharing digital comics/misc content with your friends/groups.
 
@@ -18,11 +18,14 @@ $ npm install
 3. Start the bot via `npm start`.
 4. To modify commands, look under `bot.js`. 
 5. Logic for fetching comic is separated under `lib/comic.js`.
+6. Logic for fetching other random things is separated under `lib/random.js`
 
 ### Features
 * Random comics from **Cyanide&Happiness**.
 * Random comics from **XKCD**.
 * Random comics from **Dinocomics**.
+* Random cats from **The Cat API**.
+* Random two-line jokes from **The Oatmeal**.
 * More coming soon!
 
 ##### Screenshot

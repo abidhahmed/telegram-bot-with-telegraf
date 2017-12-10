@@ -1,6 +1,6 @@
 {
   "name": "telegram-bot-with-telegraf",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Telegram bot for web comics & misc content - made with the awesome Telegraf API",
   "repository": {
     "type": "git",
@@ -22,13 +22,16 @@
   "engines": {
     "node": "^8.9.1"
   },
+  "scripts": {
+    "test": "jest"
+  },
   "dependencies": {
+    "axios": "^0.17.1",
     "cheerio": "^1.0.0-rc.2",
-    "is-url": "^1.2.2",
-    "node-fetch": "^1.7.3",
     "telegraf": "^3.16.4"
   },
   "devDependencies": {
+    "jest": "^21.3.0-beta.13",
     "standard": "^10.0.3"
   }
 }
