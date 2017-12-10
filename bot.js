@@ -46,7 +46,7 @@ bot.command('dinocomics', (ctx) => {
 })
 
 bot.command('randomcat', (ctx) => {
-  random.cat(config.catAPI)
+  random.cat(config.catApi)
     .then(catsLink => {
       ctx.replyWithChatAction('upload_photo')
       ctx.replyWithPhoto(catsLink, {caption: 'Random Cat'})
