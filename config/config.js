@@ -1,5 +1,15 @@
 'use strict'
 
 module.exports = {
-  telegramToken: ''
+  telegramToken: '',
+
+  explosmUrl: 'http://explosm.net/comics/random',
+
+  xkcdUrl: 'http://c.xkcd.com/random/comic/',
+
+  dinocomicsUrl: 'http://www.qwantz.com/index.php',
+
+  catApi: 'http://thecatapi.com/api/images/get?format=src',
+
+  jokeUrl: 'http://theoatmeal.com/djtaf/'
 }
