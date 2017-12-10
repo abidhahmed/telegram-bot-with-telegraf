@@ -1,6 +1,6 @@
 {
   "name": "telegram-bot-with-telegraf",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Telegram bot for web comics & misc content - made with the awesome Telegraf API",
   "repository": {
     "type": "git",
