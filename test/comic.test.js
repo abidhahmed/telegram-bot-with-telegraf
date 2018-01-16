@@ -8,9 +8,9 @@ test('calling comic.cyanide() with correct data returns url', async () => {
 
 test('calling comic.cyanide() with wrong data returns error', async () => {
   try {
-  	await comic.cyanide(wrongUrl)
+    await comic.cyanide(wrongUrl)
   } catch (e) {
-  	expect.objectContaining(e)
+    expect.objectContaining(e)
   }
 })
 
@@ -20,9 +20,9 @@ test('calling comic.xkcd() with correct data returns url', async () => {
 
 test('calling comic.xkcd() with wrong data returns error', async () => {
   try {
-  	await comic.xkcd(wrongUrl)
+    await comic.xkcd(wrongUrl)
   } catch (e) {
-  	expect.objectContaining(e)
+    expect.objectContaining(e)
   }
 })
 
@@ -32,8 +32,8 @@ test('calling comic.dinocomics() with correct data returns url', async () => {
 
 test('calling comic.dinocomics() with wrong data returns error', async () => {
   try {
-  	await comic.dinocomics(wrongUrl)
+    await comic.dinocomics(wrongUrl)
   } catch (e) {
-  	expect.objectContaining(e)
+    expect.objectContaining(e)
   }
 })
